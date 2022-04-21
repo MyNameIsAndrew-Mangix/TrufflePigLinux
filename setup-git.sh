@@ -8,6 +8,7 @@ sudo git config --system core.editor nano
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=10800'
 git config --global push.default simple
+git remote add origin https://github.com/MyNameIsAndrew-Mangix/TrufflePigLinux
 
 tput setaf 2
 echo "Git setup done"
