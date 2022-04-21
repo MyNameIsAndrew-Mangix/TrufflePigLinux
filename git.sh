@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Deleting the work folder if it exists"
-[ -d work ] && rm -rf work
+[ -d work ] && sudo rm -rf work
 
 echo "Checking for newer files online first"
 git pull
