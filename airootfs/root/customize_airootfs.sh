@@ -11,6 +11,9 @@ usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
+groupadd -r autologin
+gpasswd -a liveuser autologin
+
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/ ' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
@@ -22,3 +25,4 @@ sed -i 's/#\(HandeLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default graphical target
 systemctl enable lightdm.service
+
