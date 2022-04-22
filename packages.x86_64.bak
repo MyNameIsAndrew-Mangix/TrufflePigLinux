@@ -1,4 +1,3 @@
-#Arch
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -119,5 +118,3 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-
-#TrufflePig
