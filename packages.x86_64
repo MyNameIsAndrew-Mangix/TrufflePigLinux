@@ -132,6 +132,7 @@ rofi
 termite
 ranger
 lightdm
+lightdm-gtk-greeter
 dex
 rlwrap
 xorg-server
