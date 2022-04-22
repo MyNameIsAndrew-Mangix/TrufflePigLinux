@@ -121,3 +121,18 @@ xl2tpd
 zsh
 
 #TrufflePig
+os-prober
+networkmanager
+awesome
+vicious
+redshift
+pulse
+conky
+rofi
+termite
+ranger
+lightdm
+dex
+rlwrap
+xorg-server
+xorg
