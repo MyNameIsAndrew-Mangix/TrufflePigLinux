@@ -13,6 +13,7 @@ chmod 700 /root
 
 groupadd -r autologin
 useradd -m -g users -G adm,audio,disk,floppy,log,network,optical,rfkill,storage,video,wheel,sys,autologin -s /bin/bash liveuser
+passwd -d liveuser
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/ ' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
