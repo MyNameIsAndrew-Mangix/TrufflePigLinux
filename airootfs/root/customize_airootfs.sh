@@ -12,7 +12,7 @@ cp -aT /etc/skel/ /root/
 chmod 700 /root
 
 groupadd -r autologin
-gpasswd -a liveuser autologin
+useradd -m -g users -G adm,audio,disk,floppy,log,network,optical,rfkill,storage,video,wheel,sys,autologin -s /bin/bash liveuser
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/ ' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
